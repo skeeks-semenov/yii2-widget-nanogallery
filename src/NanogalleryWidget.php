@@ -32,6 +32,11 @@ class NanogalleryWidget extends Widget
     public $clientOptions = [];
 
     /**
+     * @var array
+     */
+    public $items = [];
+
+    /**
      * @var string
      */
     public $viewFile = "nanogallery";
