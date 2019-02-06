@@ -24,27 +24,29 @@ or add
 ```
 
 
-How to use without model
+How to use
 ----------
 
 ```php
 
-\skeeks\yii2\nanogalleryWidget\NanogalleryWidget::widget([
-    'name' => 'schedule'
-]);
+<? $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\models\StorageFile $model) {
+    return [
+        'src'         => $model->src,
+        'preview_src' => \Yii::$app->imaging->thumbnailUrlOnRequest($model->src,
+            new \skeeks\cms\components\imaging\filters\Thumbnail([
+                'h' => 350,
+                'w' => 0,
+            ])
+        ),
+        'description' => $model->name,
+        'title'       => $model->name,
+    ];
+}); ?>
 
-```
 
-How to use with model
-----------
-
-```php
-
-$form = new \yii\widgets\ActiveForm();
-
-$form->field($model, 'schedule')->widget(
-    \skeeks\yii2\nanogalleryWidget\NanogalleryWidget::class
-);
+<?= \skeeks\yii2\nanogalleryWidget\NanogalleryWidget::widget([
+    'items' => $items,
+]); ?>
 
 ```
 
