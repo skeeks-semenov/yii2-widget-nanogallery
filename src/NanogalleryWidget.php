@@ -10,6 +10,8 @@ namespace skeeks\yii2\nanogalleryWidget;
 
 use skeeks\yii2\nanogalleryWidget\assets\NanogalleryWidgetAsset;
 use yii\base\Widget;
+use yii\helpers\ArrayHelper;
+use yii\helpers\Json;
 
 /**
  * @author Semenov Alexander <semenov@skeeks.com>
@@ -59,6 +61,42 @@ class NanogalleryWidget extends Widget
     {
         NanogalleryWidgetAsset::register($this->view);
 
+        $this->clientOptions = ArrayHelper::merge([
+            "thumbnailWidth"        => "auto",
+            "thumbnailHeight"       => 350,
+            "colorScheme"           => "none",
+            "thumbnailHoverEffect"  => [
+                'name'     => 'labelAppear75',
+                'duration' => 300,
+            ],
+            "theme"                 => "light",
+            "thumbnailGutterWidth"  => 0,
+            "thumbnailGutterHeight" => 0,
+            "i18n"                  => [
+                'thumbnailImageDescription' => 'Смотреть фото',
+                'thumbnailAlbumDescription' => 'Открыть альбом',
+            ],
+            "thumbnailLabel"        => [
+                'display'  => true,
+                'position' => 'overImageOnMiddle',
+                'align'    => 'center',
+            ],
+        ], $this->clientOptions);
+
+        $jsOptions = Json::encode($this->clientOptions);
+
+        $this->view->registerJs(<<<JS
+        
+        var id = "{$this->options['id']}";
+        var jmages = $(".sx-grid-images", $("#" + id));
+        var jloader = $(".sx-loader-container", $("#" + id));
+        
+    jmages.nanoGallery({$jsOptions});
+
+    jloader.hide();
+    jmages.show();
+JS
+        );
         return $this->render($this->viewFile);
     }
 }
