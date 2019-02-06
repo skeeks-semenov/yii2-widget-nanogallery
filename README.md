@@ -1,7 +1,12 @@
-Work schedule widget for yii2
+Image gallery for jQuery
 =====================
 
-A small element for the form of the yii2 framework. Allows you to select working days and time for working on them. Ability to select multiple ranges for one day.
+nanoGALLERY is a touch enabled and fully responsive image gallery with justified, cascading and grid layout.
+It supports self hosted images and pulling in Flickr, Google Photos and Google+ photo albums.
+
+[nanogallery.brisbois.fr](http://nanogallery.brisbois.fr/)
+
+[nanoGALLERY github](https://github.com/Kris-B/nanoGALLERY)
 
 [![Latest Stable Version](https://poser.pugx.org/skeeks/yii2-widget-nanogallery/v/stable.png)](https://packagist.org/packages/skeeks/yii2-widget-nanogallery)
 [![Total Downloads](https://poser.pugx.org/skeeks/yii2-widget-nanogallery/downloads.png)](https://packagist.org/packages/skeeks/yii2-widget-nanogallery)
@@ -46,6 +51,9 @@ How to use
 
 <?= \skeeks\yii2\nanogalleryWidget\NanogalleryWidget::widget([
     'items' => $items,
+    'clientOptions' => [
+        'thumbnailHeight' => 200
+    ],
 ]); ?>
 
 ```
