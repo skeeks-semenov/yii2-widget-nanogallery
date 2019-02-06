@@ -101,14 +101,14 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
 
 
 
-![Animation](/doc/nanoGALLERY4_demo.gif?raw=true "Animation")  
-[<img src="/doc/nanogallery_screenshot.png?raw=true" alt="Screenshot1" width="400"/>](/doc/nanogallery_screenshot.png?raw=true)
-[<img src="/doc/site.png?raw=true" alt="Screenshot1" width="400"/>](/doc/site.png?raw=true)
+![Animation](https://skeeks.com/uploads/all/e7/c1/61/e7c161f5775c1cf184cebed3b1cf51de.gif "Animation")  
+[<img src="https://skeeks.com/uploads/all/9a/e4/a1/9ae4a18a23686f3a1d19004807c82c64.png" alt="Screenshot1" width="400"/>](/doc/nanogallery_screenshot.png?raw=true)
+[<img src="https://skeeks.com/uploads/all/6c/c1/6d/6cc16d8e75a04a52813e59478ef9c048.png" alt="Screenshot1" width="400"/>](/doc/site.png?raw=true)
 
 Video
 ------------
 
-[<img src="/doc/youtube.jpg?raw=true" alt="Video" width="400"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
+[<img src="https://skeeks.com/uploads/all/87/3b/01/873b017127632e3d09b636555869a599.jpg" alt="Video" width="400"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
 
 
 Links
