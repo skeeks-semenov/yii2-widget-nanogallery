@@ -6,8 +6,9 @@
  * @author Semenov Alexander <semenov@skeeks.com>
  */
 
-namespace skeeks\yii2\scheduleInputWidget;
+namespace skeeks\yii2\nanogalleryWidget;
 
+use skeeks\yii2\nanogalleryWidget\assets\NanogalleryWidgetAsset;
 use yii\base\Widget;
 
 /**
@@ -51,6 +52,8 @@ class NanogalleryWidget extends Widget
      */
     public function run()
     {
+        NanogalleryWidgetAsset::register($this->view);
+
         return $this->render($this->viewFile);
     }
 }
