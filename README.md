@@ -96,6 +96,11 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
 ```
 
 
+
+![Animation](/doc/nanoGALLERY4_demo.gif?raw=true "Animation")  
+<img src="/doc/nanogallery_screenshot.png?raw=true" alt="Screenshot1" style="max-width:400px;"/>
+<img src="/doc/site.png?raw=true" alt="Screenshot1" style="max-width:400px;"/>
+
 Video
 ------------
 
