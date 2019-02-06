@@ -33,8 +33,43 @@ How to use
 ----------
 
 ```php
+<?= \skeeks\yii2\nanogalleryWidget\NanogalleryWidget::widget([
+    'items' => [
+        [
+            'src' => 'https://images.wallpaperscraft.ru/image/leopard_hischnik_morda_oskal_agressiya_58086_1280x720.jpg',
+            'preview_src' => 'https://images.wallpaperscraft.ru/image/leopard_hischnik_morda_oskal_agressiya_58086_1280x720.jpg',
+            'title' => 'title',
+            'description' => 'description',
+        ],
+        [
+            'src' => 'https://s1.1zoom.ru/b5050/261/348938-sepik_2048x1152.jpg',
+            'preview_src' => 'https://s1.1zoom.ru/b5050/261/348938-sepik_2048x1152.jpg',
+            'title' => 'title',
+            'description' => 'description',
+        ],
+        [
+            'src' => 'https://s1.1zoom.ru/big3/297/Canada_Mountains_Scenery_488936.jpg',
+            'preview_src' => 'https://s1.1zoom.ru/big3/297/Canada_Mountains_Scenery_488936.jpg',
+            'title' => 'title',
+            'description' => 'description',
+        ]
+    ],
+    'clientOptions' => [
+        'thumbnailHeight' => 500
+    ],
+]); ?>
+```
 
-<? $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\models\StorageFile $model) {
+How to use for SkeekS CMS
+----------
+
+```php
+
+<? 
+
+$tree = \skeeks\cms\models\CmsTree::findOne(10);
+$images = $tree->images; 
+$items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\models\StorageFile $model) {
     return [
         'src'         => $model->src,
         'preview_src' => \Yii::$app->imaging->thumbnailUrlOnRequest($model->src,
@@ -46,7 +81,9 @@ How to use
         'description' => $model->name,
         'title'       => $model->name,
     ];
-}); ?>
+}); 
+
+?>
 
 
 <?= \skeeks\yii2\nanogalleryWidget\NanogalleryWidget::widget([
@@ -63,7 +100,6 @@ Video
 ------------
 
 [![Work schedule widget for yii2](https://www.fresher.ru/manager_content/12-2018/youtube-podvel-tradicionnye-itogi-goda/1.jpg)](https://www.youtube.com/watch?v=mSZi8ukgngA)
-
 
 
 Links
