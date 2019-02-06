@@ -19,13 +19,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist skeeks/yii2-widget-nanogallery "*"
+php composer.phar require --prefer-dist skeeks/yii2-widget-nanogallery "^0.0.1"
 ```
 
 or add
 
 ```
-"skeeks/yii2-widget-nanogallery": "*"
+"skeeks/yii2-widget-nanogallery": "^0.0.1"
 ```
 
 
