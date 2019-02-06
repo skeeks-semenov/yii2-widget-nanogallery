@@ -108,7 +108,7 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
 Video
 ------------
 
-[<img src="https://skeeks.com/uploads/all/87/3b/01/873b017127632e3d09b636555869a599.jpg" alt="Video" width="400"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
+[<img src="https://skeeks.com/uploads/all/87/3b/01/873b017127632e3d09b636555869a599.jpg" alt="Video" width="400"/>](https://www.youtube.com/watch?v=LXAGrxcmQiE)
 
 
 Links
