@@ -56,6 +56,8 @@ How to use
     ],
     'clientOptions' => [
         'thumbnailHeight' => 500
+        
+        //all options see http://nanogallery.brisbois.fr/
     ],
 ]); ?>
 ```
@@ -90,6 +92,8 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
     'items' => $items,
     'clientOptions' => [
         'thumbnailHeight' => 200
+        
+        //all options see http://nanogallery.brisbois.fr/
     ],
 ]); ?>
 
