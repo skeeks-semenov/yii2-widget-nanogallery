@@ -102,13 +102,13 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
 
 
 ![Animation](/doc/nanoGALLERY4_demo.gif?raw=true "Animation")  
-<img src="/doc/nanogallery_screenshot.png?raw=true" alt="Screenshot1" style="max-width:400px;"/>
-<img src="/doc/site.png?raw=true" alt="Screenshot1" style="max-width:400px;"/>
+<img src="/doc/nanogallery_screenshot.png?raw=true" alt="Screenshot1" width="400"/>
+<img src="/doc/site.png?raw=true" alt="Screenshot1" width="400"/>
 
 Video
 ------------
 
-[<img src="/doc/youtube.jpg?raw=true" alt="Video" style="max-width:400px;"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
+[<img src="/doc/youtube.jpg?raw=true" alt="Video" width="400"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
 
 
 Links
