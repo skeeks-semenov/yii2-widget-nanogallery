@@ -108,7 +108,7 @@ $items = \yii\helpers\ArrayHelper::map($images, "id", function (\skeeks\cms\mode
 Video
 ------------
 
-[![Work schedule widget for yii2](https://www.fresher.ru/manager_content/12-2018/youtube-podvel-tradicionnye-itogi-goda/1.jpg)](https://www.youtube.com/watch?v=mSZi8ukgngA)
+[<img src="/doc/youtube.jpg?raw=true" alt="Video" style="max-width:400px;"/>](https://www.youtube.com/watch?v=mSZi8ukgngA)
 
 
 Links
