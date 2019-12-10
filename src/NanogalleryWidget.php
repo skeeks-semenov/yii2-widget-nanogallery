@@ -87,14 +87,10 @@ class NanogalleryWidget extends Widget
 
         $this->view->registerJs(<<<JS
         
-        var id = "{$this->options['id']}";
-        var jmages = $(".sx-grid-images", $("#" + id));
-        var jloader = $(".sx-loader-container", $("#" + id));
-        
-    jmages.nanoGallery({$jsOptions});
+    $(".sx-grid-images", $("#" + "{$this->options['id']}")).nanoGallery({$jsOptions});
 
-    jloader.hide();
-    jmages.show();
+    $(".sx-loader-container", $("#" + "{$this->options['id']}")).hide();
+    $(".sx-grid-images", $("#" + "{$this->options['id']}")).show();
 JS
         );
         return $this->render($this->viewFile);
