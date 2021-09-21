@@ -11,19 +11,19 @@ $widget = $this->context;
 ?>
 <?= \yii\helpers\Html::beginTag("div", $widget->options); ?>
 
-    <? if ($widget->items) : ?>
+    <?php if ($widget->items) : ?>
         <div style="text-align: center; padding-top: 20px;" class="sx-loader-container">
             Загрузка...
         </div>
         <div class="sx-grid-images" style="display: none;">
-           <? foreach ($widget->items as $item) : ?>
+           <?php foreach ($widget->items as $item) : ?>
                <a href="<?= \yii\helpers\ArrayHelper::getValue($item, 'src'); ?>"
                   data-ngthumb="<?= \yii\helpers\ArrayHelper::getValue($item, "preview_src"); ?>"
                   data-ngdesc="<?= \yii\helpers\ArrayHelper::getValue($item, "description"); ?>">
                    <?= \yii\helpers\ArrayHelper::getValue($item, "title"); ?>
                </a>
-           <? endforeach; ?>
+           <?php endforeach; ?>
         </div>
-    <? endif; ?>
+    <?php endif; ?>
 
 <?= \yii\helpers\Html::endTag("div"); ?>
